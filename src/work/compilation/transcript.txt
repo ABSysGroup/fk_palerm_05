@@ -1,0 +1,655 @@
+# //  Questa Sim-64
+# //  Version 10.1d win64 Nov  1 2012
+# //
+# //  Copyright 1991-2012 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //
+# vsim -L tb_gain -L ip -L common -L gain -L xilinxcorelib -do {add log -r *} -l transcript.txt -i -multisource_delay latest -t ns +typdelays -foreign {hdsInit C:/MentorGraphics/HDS_2012.1/resources/downstream/modelsim/ModelSim_64Bit.dll} -pli {"C:/MentorGraphics/HDS_2012.1/resources/downstream/modelsim/ModelSim_64Bit.dll"} tb_gain.tb_fifo_gain(struct) 
+# Loading C:/MentorGraphics/HDS_2012.1/resources/downstream/modelsim/ModelSim_64Bit.dll
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.constants(body)
+# Loading ieee.std_logic_arith(body)
+# Loading work.tb_fifo_gain(struct)#1
+# Loading work.gain(rtl)#1
+# Loading work.ff(rtl)#1
+# Loading work.fifo_read(rtl)#1
+# Loading work.linear_rd_addr_seq(fsm)#1
+# Loading work.reg(rtl)#1
+# Loading work.fifo_write(rtl)#1
+# Loading work.linear_wr_addr_seq(fsm)#1
+# Loading work.inversion(rtl)#1
+# Loading work.linear_1x3_addr_cntr(rtl)#1
+# Loading work.mux2a1(rtl)#1
+# Loading work.ram3x1(rtl)#1
+# Loading work.ram3x3(rtl)#1
+# Loading work.reg(rtl)#2
+# Loading work.rom1x3(rtl)#1
+# Loading work.mult_hpht_r(rtl)#1
+# Loading work.adder(rtl)#1
+# Loading work.mult_1x3_3x1(rtl)#1
+# Loading work.mux2a1(rtl)#2
+# Loading work.mult_1x3_3x1_addr_seq(rtl)#1
+# Loading work.mult_p_ht(rtl)#1
+# Loading work.mult_1x3_3x3(rtl)#1
+# Loading work.mux2a1(rtl)#3
+# Loading work.mult_3x3_3x1_addr_seq(rtl)#1
+# Loading work.uc_gain(rtl)#1
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.fifo_communications(fifo_communications_a)#1
+# Loading xilinxcorelib.fifo_generator_v9_1(behavioral)#1
+# Loading xilinxcorelib.fifo_generator_v9_1_conv(behavioral)#1
+# ** Warning: (vsim-3479) Time unit 'ps' is less than the simulator resolution (1ns).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fifo_gain/i_gain2correction/U0/gconvfifo/inst_conv_fifo
+# Loading xilinxcorelib.fifo_generator_v9_1_bhv_ss(behavioral)#1
+# ** Warning: (vsim-8684) No drivers exist on out port /tb_fifo_gain/i_gain2correction/U0/gconvfifo/inst_conv_fifo/gen_ss/fgss/PROG_EMPTY, and its initial value is not used.
+# 
+# Therefore, simulation behavior may occur that is not in compliance with
+# 
+# the VHDL standard as the initial values come from the base signal /tb_fifo_gain/i_gain2correction/U0/PROG_EMPTY.
+# 
+# ** Warning: (vsim-8684) No drivers exist on out port /tb_fifo_gain/i_gain2correction/U0/gconvfifo/inst_conv_fifo/gen_ss/fgss/PROG_FULL, and its initial value is not used.
+# 
+# Therefore, simulation behavior may occur that is not in compliance with
+# 
+# the VHDL standard as the initial values come from the base signal /tb_fifo_gain/i_gain2correction/U0/PROG_FULL.
+# 
+# ** Warning: (vsim-8684) No drivers exist on out port /tb_fifo_gain/i_gain2correction/U0/gconvfifo/inst_conv_fifo/DATA_COUNT, and its initial value is not used.
+# 
+# Therefore, simulation behavior may occur that is not in compliance with
+# 
+# the VHDL standard as the initial values come from the base signal /tb_fifo_gain/i_gain2correction/U0/DATA_COUNT.
+# 
+# ** Warning: (vsim-8684) No drivers exist on out port /tb_fifo_gain/i_gain2correction/U0/gconvfifo/inst_conv_fifo/PROG_FULL, and its initial value is not used.
+# 
+# Therefore, simulation behavior may occur that is not in compliance with
+# 
+# the VHDL standard as the initial values come from the base signal /tb_fifo_gain/i_gain2correction/U0/PROG_FULL.
+# 
+# ** Warning: (vsim-8684) No drivers exist on out port /tb_fifo_gain/i_gain2correction/U0/gconvfifo/inst_conv_fifo/PROG_EMPTY, and its initial value is not used.
+# 
+# Therefore, simulation behavior may occur that is not in compliance with
+# 
+# the VHDL standard as the initial values come from the base signal /tb_fifo_gain/i_gain2correction/U0/PROG_EMPTY.
+# 
+# add log -r * 
+run
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fifo_gain/U_0/U_1
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fifo_gain/U_0/i_mult_p_ht/i_addr_p_h
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fifo_gain/U_0/i_mult_p_ht/i_mult_pht
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fifo_gain/U_0/i_mult_hpht_r/i_addr_h_pht
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fifo_gain/U_0/i_mult_hpht_r/i_mult_hpht
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 1  Instance: /tb_fifo_gain/U_0/U_1
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 1  Instance: /tb_fifo_gain/U_0/i_mult_p_ht/i_addr_p_h
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 1  Instance: /tb_fifo_gain/U_0/i_mult_p_ht/i_mult_pht
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 1  Instance: /tb_fifo_gain/U_0/i_mult_hpht_r/i_addr_h_pht
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 1  Instance: /tb_fifo_gain/U_0/i_mult_hpht_r/i_mult_hpht
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 5 ns  Iteration: 1  Instance: /tb_fifo_gain/U_0/i_gain
+add wave -position insertpoint  \
+sim:/tb_fifo_gain/clk \
+sim:/tb_fifo_gain/fifo_write_en_gain \
+sim:/tb_fifo_gain/gain_data \
+sim:/tb_fifo_gain/gain_ready \
+sim:/tb_fifo_gain/ppr_data \
+sim:/tb_fifo_gain/ppr_data_out \
+sim:/tb_fifo_gain/ppr_read_fifo \
+sim:/tb_fifo_gain/ppr_ready \
+sim:/tb_fifo_gain/r \
+sim:/tb_fifo_gain/rst \
+sim:/tb_fifo_gain/wr_en
+add wave -position insertpoint  \
+sim:/tb_fifo_gain/i_gain2correction/clk \
+sim:/tb_fifo_gain/i_gain2correction/din \
+sim:/tb_fifo_gain/i_gain2correction/dout \
+sim:/tb_fifo_gain/i_gain2correction/empty \
+sim:/tb_fifo_gain/i_gain2correction/full \
+sim:/tb_fifo_gain/i_gain2correction/overflow \
+sim:/tb_fifo_gain/i_gain2correction/rd_en \
+sim:/tb_fifo_gain/i_gain2correction/srst \
+sim:/tb_fifo_gain/i_gain2correction/underflow \
+sim:/tb_fifo_gain/i_gain2correction/wr_en
+add wave -position insertpoint  \
+sim:/tb_fifo_gain/i_gain2correction/U0/ALMOST_EMPTY \
+sim:/tb_fifo_gain/i_gain2correction/U0/ALMOST_FULL \
+sim:/tb_fifo_gain/i_gain2correction/U0/AXIS_DATA_COUNT \
+sim:/tb_fifo_gain/i_gain2correction/U0/AXIS_DBITERR \
+sim:/tb_fifo_gain/i_gain2correction/U0/AXIS_INJECTDBITERR \
+sim:/tb_fifo_gain/i_gain2correction/U0/AXIS_INJECTSBITERR \
+sim:/tb_fifo_gain/i_gain2correction/U0/AXIS_OVERFLOW \
+sim:/tb_fifo_gain/i_gain2correction/U0/AXIS_PROG_EMPTY \
+sim:/tb_fifo_gain/i_gain2correction/U0/AXIS_PROG_EMPTY_THRESH \
+sim:/tb_fifo_gain/i_gain2correction/U0/AXIS_PROG_FULL \
+sim:/tb_fifo_gain/i_gain2correction/U0/AXIS_PROG_FULL_THRESH \
+sim:/tb_fifo_gain/i_gain2correction/U0/AXIS_RD_DATA_COUNT \
+sim:/tb_fifo_gain/i_gain2correction/U0/AXIS_SBITERR \
+sim:/tb_fifo_gain/i_gain2correction/U0/AXIS_UNDERFLOW \
+sim:/tb_fifo_gain/i_gain2correction/U0/AXIS_WR_DATA_COUNT \
+sim:/tb_fifo_gain/i_gain2correction/U0/AXI_AR_DATA_COUNT \
+sim:/tb_fifo_gain/i_gain2correction/U0/AXI_AR_DBITERR \
+sim:/tb_fifo_gain/i_gain2correction/U0/AXI_AR_INJECTDBITERR \
+sim:/tb_fifo_gain/i_gain2correction/U0/AXI_AR_INJECTSBITERR \
+sim:/tb_fifo_gain/i_gain2correction/U0/AXI_AR_OVERFLOW \
+sim:/tb_fifo_gain/i_gain2correction/U0/AXI_AR_PROG_EMPTY \
+sim:/tb_fifo_gain/i_gain2correction/U0/AXI_AR_PROG_EMPTY_THRESH \
+sim:/tb_fifo_gain/i_gain2correction/U0/AXI_AR_PROG_FULL \
+sim:/tb_fifo_gain/i_gain2correction/U0/AXI_AR_PROG_FULL_THRESH \
+sim:/tb_fifo_gain/i_gain2correction/U0/AXI_AR_RD_DATA_COUNT \
+sim:/tb_fifo_gain/i_gain2correction/U0/AXI_AR_SBITERR \
+sim:/tb_fifo_gain/i_gain2correction/U0/AXI_AR_UNDERFLOW \
+sim:/tb_fifo_gain/i_gain2correction/U0/AXI_AR_WR_DATA_COUNT \
+sim:/tb_fifo_gain/i_gain2correction/U0/AXI_AW_DATA_COUNT \
+sim:/tb_fifo_gain/i_gain2correction/U0/AXI_AW_DBITERR \
+sim:/tb_fifo_gain/i_gain2correction/U0/AXI_AW_INJECTDBITERR \
+sim:/tb_fifo_gain/i_gain2correction/U0/AXI_AW_INJECTSBITERR \
+sim:/tb_fifo_gain/i_gain2correction/U0/AXI_AW_OVERFLOW \
+sim:/tb_fifo_gain/i_gain2correction/U0/AXI_AW_PROG_EMPTY \
+sim:/tb_fifo_gain/i_gain2correction/U0/AXI_AW_PROG_EMPTY_THRESH \
+sim:/tb_fifo_gain/i_gain2correction/U0/AXI_AW_PROG_FULL \
+sim:/tb_fifo_gain/i_gain2correction/U0/AXI_AW_PROG_FULL_THRESH \
+sim:/tb_fifo_gain/i_gain2correction/U0/AXI_AW_RD_DATA_COUNT \
+sim:/tb_fifo_gain/i_gain2correction/U0/AXI_AW_SBITERR \
+sim:/tb_fifo_gain/i_gain2correction/U0/AXI_AW_UNDERFLOW \
+sim:/tb_fifo_gain/i_gain2correction/U0/AXI_AW_WR_DATA_COUNT \
+sim:/tb_fifo_gain/i_gain2correction/U0/AXI_B_DATA_COUNT \
+sim:/tb_fifo_gain/i_gain2correction/U0/AXI_B_DBITERR \
+sim:/tb_fifo_gain/i_gain2correction/U0/AXI_B_INJECTDBITERR \
+sim:/tb_fifo_gain/i_gain2correction/U0/AXI_B_INJECTSBITERR \
+sim:/tb_fifo_gain/i_gain2correction/U0/AXI_B_OVERFLOW \
+sim:/tb_fifo_gain/i_gain2correction/U0/AXI_B_PROG_EMPTY \
+sim:/tb_fifo_gain/i_gain2correction/U0/AXI_B_PROG_EMPTY_THRESH \
+sim:/tb_fifo_gain/i_gain2correction/U0/AXI_B_PROG_FULL \
+sim:/tb_fifo_gain/i_gain2correction/U0/AXI_B_PROG_FULL_THRESH \
+sim:/tb_fifo_gain/i_gain2correction/U0/AXI_B_RD_DATA_COUNT \
+sim:/tb_fifo_gain/i_gain2correction/U0/AXI_B_SBITERR \
+sim:/tb_fifo_gain/i_gain2correction/U0/AXI_B_UNDERFLOW \
+sim:/tb_fifo_gain/i_gain2correction/U0/AXI_B_WR_DATA_COUNT \
+sim:/tb_fifo_gain/i_gain2correction/U0/AXI_R_DATA_COUNT \
+sim:/tb_fifo_gain/i_gain2correction/U0/AXI_R_DBITERR \
+sim:/tb_fifo_gain/i_gain2correction/U0/AXI_R_INJECTDBITERR \
+sim:/tb_fifo_gain/i_gain2correction/U0/AXI_R_INJECTSBITERR \
+sim:/tb_fifo_gain/i_gain2correction/U0/AXI_R_OVERFLOW \
+sim:/tb_fifo_gain/i_gain2correction/U0/AXI_R_PROG_EMPTY \
+sim:/tb_fifo_gain/i_gain2correction/U0/AXI_R_PROG_EMPTY_THRESH \
+sim:/tb_fifo_gain/i_gain2correction/U0/AXI_R_PROG_FULL \
+sim:/tb_fifo_gain/i_gain2correction/U0/AXI_R_PROG_FULL_THRESH \
+sim:/tb_fifo_gain/i_gain2correction/U0/AXI_R_RD_DATA_COUNT \
+sim:/tb_fifo_gain/i_gain2correction/U0/AXI_R_SBITERR \
+sim:/tb_fifo_gain/i_gain2correction/U0/AXI_R_UNDERFLOW \
+sim:/tb_fifo_gain/i_gain2correction/U0/AXI_R_WR_DATA_COUNT \
+sim:/tb_fifo_gain/i_gain2correction/U0/AXI_W_DATA_COUNT \
+sim:/tb_fifo_gain/i_gain2correction/U0/AXI_W_DBITERR \
+sim:/tb_fifo_gain/i_gain2correction/U0/AXI_W_INJECTDBITERR \
+sim:/tb_fifo_gain/i_gain2correction/U0/AXI_W_INJECTSBITERR \
+sim:/tb_fifo_gain/i_gain2correction/U0/AXI_W_OVERFLOW \
+sim:/tb_fifo_gain/i_gain2correction/U0/AXI_W_PROG_EMPTY \
+sim:/tb_fifo_gain/i_gain2correction/U0/AXI_W_PROG_EMPTY_THRESH \
+sim:/tb_fifo_gain/i_gain2correction/U0/AXI_W_PROG_FULL \
+sim:/tb_fifo_gain/i_gain2correction/U0/AXI_W_PROG_FULL_THRESH \
+sim:/tb_fifo_gain/i_gain2correction/U0/AXI_W_RD_DATA_COUNT \
+sim:/tb_fifo_gain/i_gain2correction/U0/AXI_W_SBITERR \
+sim:/tb_fifo_gain/i_gain2correction/U0/AXI_W_UNDERFLOW \
+sim:/tb_fifo_gain/i_gain2correction/U0/AXI_W_WR_DATA_COUNT \
+sim:/tb_fifo_gain/i_gain2correction/U0/BACKUP \
+sim:/tb_fifo_gain/i_gain2correction/U0/BACKUP_MARKER \
+sim:/tb_fifo_gain/i_gain2correction/U0/CLK \
+sim:/tb_fifo_gain/i_gain2correction/U0/C_ADD_NGC_CONSTRAINT \
+sim:/tb_fifo_gain/i_gain2correction/U0/C_APPLICATION_TYPE_AXIS \
+sim:/tb_fifo_gain/i_gain2correction/U0/C_APPLICATION_TYPE_RACH \
+sim:/tb_fifo_gain/i_gain2correction/U0/C_APPLICATION_TYPE_RDCH \
+sim:/tb_fifo_gain/i_gain2correction/U0/C_APPLICATION_TYPE_WACH \
+sim:/tb_fifo_gain/i_gain2correction/U0/C_APPLICATION_TYPE_WDCH \
+sim:/tb_fifo_gain/i_gain2correction/U0/C_APPLICATION_TYPE_WRCH \
+sim:/tb_fifo_gain/i_gain2correction/U0/C_AXIS_TDATA_WIDTH \
+sim:/tb_fifo_gain/i_gain2correction/U0/C_AXIS_TDEST_WIDTH \
+sim:/tb_fifo_gain/i_gain2correction/U0/C_AXIS_TID_WIDTH \
+sim:/tb_fifo_gain/i_gain2correction/U0/C_AXIS_TKEEP_WIDTH \
+sim:/tb_fifo_gain/i_gain2correction/U0/C_AXIS_TSTRB_WIDTH \
+sim:/tb_fifo_gain/i_gain2correction/U0/C_AXIS_TUSER_WIDTH \
+sim:/tb_fifo_gain/i_gain2correction/U0/C_AXIS_TYPE \
+sim:/tb_fifo_gain/i_gain2correction/U0/C_AXI_ADDR_WIDTH \
+sim:/tb_fifo_gain/i_gain2correction/U0/C_AXI_ARUSER_WIDTH \
+sim:/tb_fifo_gain/i_gain2correction/U0/C_AXI_AWUSER_WIDTH \
+sim:/tb_fifo_gain/i_gain2correction/U0/C_AXI_BRESP_WIDTH \
+sim:/tb_fifo_gain/i_gain2correction/U0/C_AXI_BURST_WIDTH \
+sim:/tb_fifo_gain/i_gain2correction/U0/C_AXI_BUSER_WIDTH \
+sim:/tb_fifo_gain/i_gain2correction/U0/C_AXI_CACHE_WIDTH \
+sim:/tb_fifo_gain/i_gain2correction/U0/C_AXI_DATA_WIDTH \
+sim:/tb_fifo_gain/i_gain2correction/U0/C_AXI_ID_WIDTH \
+sim:/tb_fifo_gain/i_gain2correction/U0/C_AXI_LEN_WIDTH \
+sim:/tb_fifo_gain/i_gain2correction/U0/C_AXI_LOCK_WIDTH \
+sim:/tb_fifo_gain/i_gain2correction/U0/C_AXI_PROT_WIDTH \
+sim:/tb_fifo_gain/i_gain2correction/U0/C_AXI_QOS_WIDTH \
+sim:/tb_fifo_gain/i_gain2correction/U0/C_AXI_REGION_WIDTH \
+sim:/tb_fifo_gain/i_gain2correction/U0/C_AXI_RRESP_WIDTH \
+sim:/tb_fifo_gain/i_gain2correction/U0/C_AXI_RUSER_WIDTH \
+sim:/tb_fifo_gain/i_gain2correction/U0/C_AXI_SIZE_WIDTH \
+sim:/tb_fifo_gain/i_gain2correction/U0/C_AXI_TYPE \
+sim:/tb_fifo_gain/i_gain2correction/U0/C_AXI_WUSER_WIDTH \
+sim:/tb_fifo_gain/i_gain2correction/U0/C_COMMON_CLOCK \
+sim:/tb_fifo_gain/i_gain2correction/U0/C_COUNT_TYPE \
+sim:/tb_fifo_gain/i_gain2correction/U0/C_DATA_COUNT_WIDTH \
+sim:/tb_fifo_gain/i_gain2correction/U0/C_DEFAULT_VALUE \
+sim:/tb_fifo_gain/i_gain2correction/U0/C_DIN_WIDTH \
+sim:/tb_fifo_gain/i_gain2correction/U0/C_DIN_WIDTH_AXIS \
+sim:/tb_fifo_gain/i_gain2correction/U0/C_DIN_WIDTH_RACH \
+sim:/tb_fifo_gain/i_gain2correction/U0/C_DIN_WIDTH_RDCH \
+sim:/tb_fifo_gain/i_gain2correction/U0/C_DIN_WIDTH_WACH \
+sim:/tb_fifo_gain/i_gain2correction/U0/C_DIN_WIDTH_WDCH \
+sim:/tb_fifo_gain/i_gain2correction/U0/C_DIN_WIDTH_WRCH \
+sim:/tb_fifo_gain/i_gain2correction/U0/C_DOUT_RST_VAL \
+sim:/tb_fifo_gain/i_gain2correction/U0/C_DOUT_WIDTH \
+sim:/tb_fifo_gain/i_gain2correction/U0/C_ENABLE_RLOCS \
+sim:/tb_fifo_gain/i_gain2correction/U0/C_ENABLE_RST_SYNC \
+sim:/tb_fifo_gain/i_gain2correction/U0/C_ERROR_INJECTION_TYPE \
+sim:/tb_fifo_gain/i_gain2correction/U0/C_ERROR_INJECTION_TYPE_AXIS \
+sim:/tb_fifo_gain/i_gain2correction/U0/C_ERROR_INJECTION_TYPE_RACH \
+sim:/tb_fifo_gain/i_gain2correction/U0/C_ERROR_INJECTION_TYPE_RDCH \
+sim:/tb_fifo_gain/i_gain2correction/U0/C_ERROR_INJECTION_TYPE_WACH \
+sim:/tb_fifo_gain/i_gain2correction/U0/C_ERROR_INJECTION_TYPE_WDCH \
+sim:/tb_fifo_gain/i_gain2correction/U0/C_ERROR_INJECTION_TYPE_WRCH \
+sim:/tb_fifo_gain/i_gain2correction/U0/C_FAMILY \
+sim:/tb_fifo_gain/i_gain2correction/U0/C_FULL_FLAGS_RST_VAL \
+sim:/tb_fifo_gain/i_gain2correction/U0/C_HAS_ALMOST_EMPTY \
+sim:/tb_fifo_gain/i_gain2correction/U0/C_HAS_ALMOST_FULL \
+sim:/tb_fifo_gain/i_gain2correction/U0/C_HAS_AXIS_TDATA \
+sim:/tb_fifo_gain/i_gain2correction/U0/C_HAS_AXIS_TDEST \
+sim:/tb_fifo_gain/i_gain2correction/U0/C_HAS_AXIS_TID \
+sim:/tb_fifo_gain/i_gain2correction/U0/C_HAS_AXIS_TKEEP \
+sim:/tb_fifo_gain/i_gain2correction/U0/C_HAS_AXIS_TLAST \
+sim:/tb_fifo_gain/i_gain2correction/U0/C_HAS_AXIS_TREADY \
+sim:/tb_fifo_gain/i_gain2correction/U0/C_HAS_AXIS_TSTRB \
+sim:/tb_fifo_gain/i_gain2correction/U0/C_HAS_AXIS_TUSER \
+sim:/tb_fifo_gain/i_gain2correction/U0/C_HAS_AXI_ARUSER \
+sim:/tb_fifo_gain/i_gain2correction/U0/C_HAS_AXI_AWUSER \
+sim:/tb_fifo_gain/i_gain2correction/U0/C_HAS_AXI_BUSER \
+sim:/tb_fifo_gain/i_gain2correction/U0/C_HAS_AXI_RD_CHANNEL \
+sim:/tb_fifo_gain/i_gain2correction/U0/C_HAS_AXI_RUSER \
+sim:/tb_fifo_gain/i_gain2correction/U0/C_HAS_AXI_WR_CHANNEL \
+sim:/tb_fifo_gain/i_gain2correction/U0/C_HAS_AXI_WUSER \
+sim:/tb_fifo_gain/i_gain2correction/U0/C_HAS_BACKUP \
+sim:/tb_fifo_gain/i_gain2correction/U0/C_HAS_DATA_COUNT \
+sim:/tb_fifo_gain/i_gain2correction/U0/C_HAS_DATA_COUNTS_AXIS \
+sim:/tb_fifo_gain/i_gain2correction/U0/C_HAS_DATA_COUNTS_RACH \
+sim:/tb_fifo_gain/i_gain2correction/U0/C_HAS_DATA_COUNTS_RDCH \
+sim:/tb_fifo_gain/i_gain2correction/U0/C_HAS_DATA_COUNTS_WACH \
+sim:/tb_fifo_gain/i_gain2correction/U0/C_HAS_DATA_COUNTS_WDCH \
+sim:/tb_fifo_gain/i_gain2correction/U0/C_HAS_DATA_COUNTS_WRCH \
+sim:/tb_fifo_gain/i_gain2correction/U0/C_HAS_INT_CLK \
+sim:/tb_fifo_gain/i_gain2correction/U0/C_HAS_MASTER_CE \
+sim:/tb_fifo_gain/i_gain2correction/U0/C_HAS_MEMINIT_FILE \
+sim:/tb_fifo_gain/i_gain2correction/U0/C_HAS_OVERFLOW \
+sim:/tb_fifo_gain/i_gain2correction/U0/C_HAS_PROG_FLAGS_AXIS \
+sim:/tb_fifo_gain/i_gain2correction/U0/C_HAS_PROG_FLAGS_RACH \
+sim:/tb_fifo_gain/i_gain2correction/U0/C_HAS_PROG_FLAGS_RDCH \
+sim:/tb_fifo_gain/i_gain2correction/U0/C_HAS_PROG_FLAGS_WACH \
+sim:/tb_fifo_gain/i_gain2correction/U0/C_HAS_PROG_FLAGS_WDCH \
+sim:/tb_fifo_gain/i_gain2correction/U0/C_HAS_PROG_FLAGS_WRCH \
+sim:/tb_fifo_gain/i_gain2correction/U0/C_HAS_RD_DATA_COUNT \
+sim:/tb_fifo_gain/i_gain2correction/U0/C_HAS_RD_RST \
+sim:/tb_fifo_gain/i_gain2correction/U0/C_HAS_RST \
+sim:/tb_fifo_gain/i_gain2correction/U0/C_HAS_SLAVE_CE \
+sim:/tb_fifo_gain/i_gain2correction/U0/C_HAS_SRST \
+sim:/tb_fifo_gain/i_gain2correction/U0/C_HAS_UNDERFLOW \
+sim:/tb_fifo_gain/i_gain2correction/U0/C_HAS_VALID \
+sim:/tb_fifo_gain/i_gain2correction/U0/C_HAS_WR_ACK \
+sim:/tb_fifo_gain/i_gain2correction/U0/C_HAS_WR_DATA_COUNT \
+sim:/tb_fifo_gain/i_gain2correction/U0/C_HAS_WR_RST \
+sim:/tb_fifo_gain/i_gain2correction/U0/C_IMPLEMENTATION_TYPE \
+sim:/tb_fifo_gain/i_gain2correction/U0/C_IMPLEMENTATION_TYPE_AXIS \
+sim:/tb_fifo_gain/i_gain2correction/U0/C_IMPLEMENTATION_TYPE_RACH \
+sim:/tb_fifo_gain/i_gain2correction/U0/C_IMPLEMENTATION_TYPE_RDCH \
+sim:/tb_fifo_gain/i_gain2correction/U0/C_IMPLEMENTATION_TYPE_WACH \
+sim:/tb_fifo_gain/i_gain2correction/U0/C_IMPLEMENTATION_TYPE_WDCH \
+sim:/tb_fifo_gain/i_gain2correction/U0/C_IMPLEMENTATION_TYPE_WRCH \
+sim:/tb_fifo_gain/i_gain2correction/U0/C_INIT_WR_PNTR_VAL \
+sim:/tb_fifo_gain/i_gain2correction/U0/C_INTERFACE_TYPE \
+sim:/tb_fifo_gain/i_gain2correction/U0/C_MEMORY_TYPE \
+sim:/tb_fifo_gain/i_gain2correction/U0/C_MIF_FILE_NAME \
+sim:/tb_fifo_gain/i_gain2correction/U0/C_MSGON_VAL \
+sim:/tb_fifo_gain/i_gain2correction/U0/C_OPTIMIZATION_MODE \
+sim:/tb_fifo_gain/i_gain2correction/U0/C_OVERFLOW_LOW \
+sim:/tb_fifo_gain/i_gain2correction/U0/C_PRELOAD_LATENCY \
+sim:/tb_fifo_gain/i_gain2correction/U0/C_PRELOAD_REGS \
+sim:/tb_fifo_gain/i_gain2correction/U0/C_PRIM_FIFO_TYPE \
+sim:/tb_fifo_gain/i_gain2correction/U0/C_PROG_EMPTY_THRESH_ASSERT_VAL \
+sim:/tb_fifo_gain/i_gain2correction/U0/C_PROG_EMPTY_THRESH_ASSERT_VAL_AXIS \
+sim:/tb_fifo_gain/i_gain2correction/U0/C_PROG_EMPTY_THRESH_ASSERT_VAL_RACH \
+sim:/tb_fifo_gain/i_gain2correction/U0/C_PROG_EMPTY_THRESH_ASSERT_VAL_RDCH \
+sim:/tb_fifo_gain/i_gain2correction/U0/C_PROG_EMPTY_THRESH_ASSERT_VAL_WACH \
+sim:/tb_fifo_gain/i_gain2correction/U0/C_PROG_EMPTY_THRESH_ASSERT_VAL_WDCH \
+sim:/tb_fifo_gain/i_gain2correction/U0/C_PROG_EMPTY_THRESH_ASSERT_VAL_WRCH \
+sim:/tb_fifo_gain/i_gain2correction/U0/C_PROG_EMPTY_THRESH_NEGATE_VAL \
+sim:/tb_fifo_gain/i_gain2correction/U0/C_PROG_EMPTY_TYPE \
+sim:/tb_fifo_gain/i_gain2correction/U0/C_PROG_EMPTY_TYPE_AXIS \
+sim:/tb_fifo_gain/i_gain2correction/U0/C_PROG_EMPTY_TYPE_RACH \
+sim:/tb_fifo_gain/i_gain2correction/U0/C_PROG_EMPTY_TYPE_RDCH \
+sim:/tb_fifo_gain/i_gain2correction/U0/C_PROG_EMPTY_TYPE_WACH \
+sim:/tb_fifo_gain/i_gain2correction/U0/C_PROG_EMPTY_TYPE_WDCH \
+sim:/tb_fifo_gain/i_gain2correction/U0/C_PROG_EMPTY_TYPE_WRCH \
+sim:/tb_fifo_gain/i_gain2correction/U0/C_PROG_FULL_THRESH_ASSERT_VAL \
+sim:/tb_fifo_gain/i_gain2correction/U0/C_PROG_FULL_THRESH_ASSERT_VAL_AXIS \
+sim:/tb_fifo_gain/i_gain2correction/U0/C_PROG_FULL_THRESH_ASSERT_VAL_RACH \
+sim:/tb_fifo_gain/i_gain2correction/U0/C_PROG_FULL_THRESH_ASSERT_VAL_RDCH \
+sim:/tb_fifo_gain/i_gain2correction/U0/C_PROG_FULL_THRESH_ASSERT_VAL_WACH \
+sim:/tb_fifo_gain/i_gain2correction/U0/C_PROG_FULL_THRESH_ASSERT_VAL_WDCH \
+sim:/tb_fifo_gain/i_gain2correction/U0/C_PROG_FULL_THRESH_ASSERT_VAL_WRCH \
+sim:/tb_fifo_gain/i_gain2correction/U0/C_PROG_FULL_THRESH_NEGATE_VAL \
+sim:/tb_fifo_gain/i_gain2correction/U0/C_PROG_FULL_TYPE \
+sim:/tb_fifo_gain/i_gain2correction/U0/C_PROG_FULL_TYPE_AXIS \
+sim:/tb_fifo_gain/i_gain2correction/U0/C_PROG_FULL_TYPE_RACH \
+sim:/tb_fifo_gain/i_gain2correction/U0/C_PROG_FULL_TYPE_RDCH \
+sim:/tb_fifo_gain/i_gain2correction/U0/C_PROG_FULL_TYPE_WACH \
+sim:/tb_fifo_gain/i_gain2correction/U0/C_PROG_FULL_TYPE_WDCH \
+sim:/tb_fifo_gain/i_gain2correction/U0/C_PROG_FULL_TYPE_WRCH \
+sim:/tb_fifo_gain/i_gain2correction/U0/C_RACH_TYPE \
+sim:/tb_fifo_gain/i_gain2correction/U0/C_RDCH_TYPE \
+sim:/tb_fifo_gain/i_gain2correction/U0/C_RD_DATA_COUNT_WIDTH \
+sim:/tb_fifo_gain/i_gain2correction/U0/C_RD_DEPTH \
+sim:/tb_fifo_gain/i_gain2correction/U0/C_RD_FREQ \
+sim:/tb_fifo_gain/i_gain2correction/U0/C_RD_PNTR_WIDTH \
+sim:/tb_fifo_gain/i_gain2correction/U0/C_REG_SLICE_MODE_AXIS \
+sim:/tb_fifo_gain/i_gain2correction/U0/C_REG_SLICE_MODE_RACH \
+sim:/tb_fifo_gain/i_gain2correction/U0/C_REG_SLICE_MODE_RDCH \
+sim:/tb_fifo_gain/i_gain2correction/U0/C_REG_SLICE_MODE_WACH \
+sim:/tb_fifo_gain/i_gain2correction/U0/C_REG_SLICE_MODE_WDCH \
+sim:/tb_fifo_gain/i_gain2correction/U0/C_REG_SLICE_MODE_WRCH \
+sim:/tb_fifo_gain/i_gain2correction/U0/C_SYNCHRONIZER_STAGE \
+sim:/tb_fifo_gain/i_gain2correction/U0/C_UNDERFLOW_LOW \
+sim:/tb_fifo_gain/i_gain2correction/U0/C_USE_COMMON_OVERFLOW \
+sim:/tb_fifo_gain/i_gain2correction/U0/C_USE_COMMON_UNDERFLOW \
+sim:/tb_fifo_gain/i_gain2correction/U0/C_USE_DEFAULT_SETTINGS \
+sim:/tb_fifo_gain/i_gain2correction/U0/C_USE_DOUT_RST \
+sim:/tb_fifo_gain/i_gain2correction/U0/C_USE_ECC \
+sim:/tb_fifo_gain/i_gain2correction/U0/C_USE_ECC_AXIS \
+sim:/tb_fifo_gain/i_gain2correction/U0/C_USE_ECC_RACH \
+sim:/tb_fifo_gain/i_gain2correction/U0/C_USE_ECC_RDCH \
+sim:/tb_fifo_gain/i_gain2correction/U0/C_USE_ECC_WACH \
+sim:/tb_fifo_gain/i_gain2correction/U0/C_USE_ECC_WDCH \
+sim:/tb_fifo_gain/i_gain2correction/U0/C_USE_ECC_WRCH \
+sim:/tb_fifo_gain/i_gain2correction/U0/C_USE_EMBEDDED_REG \
+sim:/tb_fifo_gain/i_gain2correction/U0/C_USE_FIFO16_FLAGS \
+sim:/tb_fifo_gain/i_gain2correction/U0/C_USE_FWFT_DATA_COUNT \
+sim:/tb_fifo_gain/i_gain2correction/U0/C_VALID_LOW \
+sim:/tb_fifo_gain/i_gain2correction/U0/C_WACH_TYPE \
+sim:/tb_fifo_gain/i_gain2correction/U0/C_WDCH_TYPE \
+sim:/tb_fifo_gain/i_gain2correction/U0/C_WRCH_TYPE \
+sim:/tb_fifo_gain/i_gain2correction/U0/C_WR_ACK_LOW \
+sim:/tb_fifo_gain/i_gain2correction/U0/C_WR_DATA_COUNT_WIDTH \
+sim:/tb_fifo_gain/i_gain2correction/U0/C_WR_DEPTH \
+sim:/tb_fifo_gain/i_gain2correction/U0/C_WR_DEPTH_AXIS \
+sim:/tb_fifo_gain/i_gain2correction/U0/C_WR_DEPTH_RACH \
+sim:/tb_fifo_gain/i_gain2correction/U0/C_WR_DEPTH_RDCH \
+sim:/tb_fifo_gain/i_gain2correction/U0/C_WR_DEPTH_WACH \
+sim:/tb_fifo_gain/i_gain2correction/U0/C_WR_DEPTH_WDCH \
+sim:/tb_fifo_gain/i_gain2correction/U0/C_WR_DEPTH_WRCH \
+sim:/tb_fifo_gain/i_gain2correction/U0/C_WR_FREQ \
+sim:/tb_fifo_gain/i_gain2correction/U0/C_WR_PNTR_WIDTH \
+sim:/tb_fifo_gain/i_gain2correction/U0/C_WR_PNTR_WIDTH_AXIS \
+sim:/tb_fifo_gain/i_gain2correction/U0/C_WR_PNTR_WIDTH_RACH \
+sim:/tb_fifo_gain/i_gain2correction/U0/C_WR_PNTR_WIDTH_RDCH \
+sim:/tb_fifo_gain/i_gain2correction/U0/C_WR_PNTR_WIDTH_WACH \
+sim:/tb_fifo_gain/i_gain2correction/U0/C_WR_PNTR_WIDTH_WDCH \
+sim:/tb_fifo_gain/i_gain2correction/U0/C_WR_PNTR_WIDTH_WRCH \
+sim:/tb_fifo_gain/i_gain2correction/U0/C_WR_RESPONSE_LATENCY \
+sim:/tb_fifo_gain/i_gain2correction/U0/DATA_COUNT \
+sim:/tb_fifo_gain/i_gain2correction/U0/DBITERR \
+sim:/tb_fifo_gain/i_gain2correction/U0/DIN \
+sim:/tb_fifo_gain/i_gain2correction/U0/DOUT \
+sim:/tb_fifo_gain/i_gain2correction/U0/EMPTY \
+sim:/tb_fifo_gain/i_gain2correction/U0/FULL \
+sim:/tb_fifo_gain/i_gain2correction/U0/INJECTDBITERR \
+sim:/tb_fifo_gain/i_gain2correction/U0/INJECTSBITERR \
+sim:/tb_fifo_gain/i_gain2correction/U0/INT_CLK \
+sim:/tb_fifo_gain/i_gain2correction/U0/M_ACLK \
+sim:/tb_fifo_gain/i_gain2correction/U0/M_ACLK_EN \
+sim:/tb_fifo_gain/i_gain2correction/U0/M_AXIS_TDATA \
+sim:/tb_fifo_gain/i_gain2correction/U0/M_AXIS_TDEST \
+sim:/tb_fifo_gain/i_gain2correction/U0/M_AXIS_TID \
+sim:/tb_fifo_gain/i_gain2correction/U0/M_AXIS_TKEEP \
+sim:/tb_fifo_gain/i_gain2correction/U0/M_AXIS_TLAST \
+sim:/tb_fifo_gain/i_gain2correction/U0/M_AXIS_TREADY \
+sim:/tb_fifo_gain/i_gain2correction/U0/M_AXIS_TSTRB \
+sim:/tb_fifo_gain/i_gain2correction/U0/M_AXIS_TUSER \
+sim:/tb_fifo_gain/i_gain2correction/U0/M_AXIS_TVALID \
+sim:/tb_fifo_gain/i_gain2correction/U0/M_AXI_ARADDR \
+sim:/tb_fifo_gain/i_gain2correction/U0/M_AXI_ARBURST \
+sim:/tb_fifo_gain/i_gain2correction/U0/M_AXI_ARCACHE \
+sim:/tb_fifo_gain/i_gain2correction/U0/M_AXI_ARID \
+sim:/tb_fifo_gain/i_gain2correction/U0/M_AXI_ARLEN \
+sim:/tb_fifo_gain/i_gain2correction/U0/M_AXI_ARLOCK \
+sim:/tb_fifo_gain/i_gain2correction/U0/M_AXI_ARPROT \
+sim:/tb_fifo_gain/i_gain2correction/U0/M_AXI_ARQOS \
+sim:/tb_fifo_gain/i_gain2correction/U0/M_AXI_ARREADY \
+sim:/tb_fifo_gain/i_gain2correction/U0/M_AXI_ARREGION \
+sim:/tb_fifo_gain/i_gain2correction/U0/M_AXI_ARSIZE \
+sim:/tb_fifo_gain/i_gain2correction/U0/M_AXI_ARUSER \
+sim:/tb_fifo_gain/i_gain2correction/U0/M_AXI_ARVALID \
+sim:/tb_fifo_gain/i_gain2correction/U0/M_AXI_AWADDR \
+sim:/tb_fifo_gain/i_gain2correction/U0/M_AXI_AWBURST \
+sim:/tb_fifo_gain/i_gain2correction/U0/M_AXI_AWCACHE \
+sim:/tb_fifo_gain/i_gain2correction/U0/M_AXI_AWID \
+sim:/tb_fifo_gain/i_gain2correction/U0/M_AXI_AWLEN \
+sim:/tb_fifo_gain/i_gain2correction/U0/M_AXI_AWLOCK \
+sim:/tb_fifo_gain/i_gain2correction/U0/M_AXI_AWPROT \
+sim:/tb_fifo_gain/i_gain2correction/U0/M_AXI_AWQOS \
+sim:/tb_fifo_gain/i_gain2correction/U0/M_AXI_AWREADY \
+sim:/tb_fifo_gain/i_gain2correction/U0/M_AXI_AWREGION \
+sim:/tb_fifo_gain/i_gain2correction/U0/M_AXI_AWSIZE \
+sim:/tb_fifo_gain/i_gain2correction/U0/M_AXI_AWUSER \
+sim:/tb_fifo_gain/i_gain2correction/U0/M_AXI_AWVALID \
+sim:/tb_fifo_gain/i_gain2correction/U0/M_AXI_BID \
+sim:/tb_fifo_gain/i_gain2correction/U0/M_AXI_BREADY \
+sim:/tb_fifo_gain/i_gain2correction/U0/M_AXI_BRESP \
+sim:/tb_fifo_gain/i_gain2correction/U0/M_AXI_BUSER \
+sim:/tb_fifo_gain/i_gain2correction/U0/M_AXI_BVALID \
+sim:/tb_fifo_gain/i_gain2correction/U0/M_AXI_RDATA \
+sim:/tb_fifo_gain/i_gain2correction/U0/M_AXI_RID \
+sim:/tb_fifo_gain/i_gain2correction/U0/M_AXI_RLAST \
+sim:/tb_fifo_gain/i_gain2correction/U0/M_AXI_RREADY \
+sim:/tb_fifo_gain/i_gain2correction/U0/M_AXI_RRESP \
+sim:/tb_fifo_gain/i_gain2correction/U0/M_AXI_RUSER \
+sim:/tb_fifo_gain/i_gain2correction/U0/M_AXI_RVALID \
+sim:/tb_fifo_gain/i_gain2correction/U0/M_AXI_WDATA \
+sim:/tb_fifo_gain/i_gain2correction/U0/M_AXI_WID \
+sim:/tb_fifo_gain/i_gain2correction/U0/M_AXI_WLAST \
+sim:/tb_fifo_gain/i_gain2correction/U0/M_AXI_WREADY \
+sim:/tb_fifo_gain/i_gain2correction/U0/M_AXI_WSTRB \
+sim:/tb_fifo_gain/i_gain2correction/U0/M_AXI_WUSER \
+sim:/tb_fifo_gain/i_gain2correction/U0/M_AXI_WVALID \
+sim:/tb_fifo_gain/i_gain2correction/U0/OVERFLOW \
+sim:/tb_fifo_gain/i_gain2correction/U0/PROG_EMPTY \
+sim:/tb_fifo_gain/i_gain2correction/U0/PROG_EMPTY_THRESH \
+sim:/tb_fifo_gain/i_gain2correction/U0/PROG_EMPTY_THRESH_ASSERT \
+sim:/tb_fifo_gain/i_gain2correction/U0/PROG_EMPTY_THRESH_NEGATE \
+sim:/tb_fifo_gain/i_gain2correction/U0/PROG_FULL \
+sim:/tb_fifo_gain/i_gain2correction/U0/PROG_FULL_THRESH \
+sim:/tb_fifo_gain/i_gain2correction/U0/PROG_FULL_THRESH_ASSERT \
+sim:/tb_fifo_gain/i_gain2correction/U0/PROG_FULL_THRESH_NEGATE \
+sim:/tb_fifo_gain/i_gain2correction/U0/RD_CLK \
+sim:/tb_fifo_gain/i_gain2correction/U0/RD_DATA_COUNT \
+sim:/tb_fifo_gain/i_gain2correction/U0/RD_EN \
+sim:/tb_fifo_gain/i_gain2correction/U0/RD_RST \
+sim:/tb_fifo_gain/i_gain2correction/U0/RST \
+sim:/tb_fifo_gain/i_gain2correction/U0/SBITERR \
+sim:/tb_fifo_gain/i_gain2correction/U0/SRST \
+sim:/tb_fifo_gain/i_gain2correction/U0/S_ACLK \
+sim:/tb_fifo_gain/i_gain2correction/U0/S_ACLK_EN \
+sim:/tb_fifo_gain/i_gain2correction/U0/S_ARESETN \
+sim:/tb_fifo_gain/i_gain2correction/U0/S_AXIS_TDATA \
+sim:/tb_fifo_gain/i_gain2correction/U0/S_AXIS_TDEST \
+sim:/tb_fifo_gain/i_gain2correction/U0/S_AXIS_TID \
+sim:/tb_fifo_gain/i_gain2correction/U0/S_AXIS_TKEEP \
+sim:/tb_fifo_gain/i_gain2correction/U0/S_AXIS_TLAST \
+sim:/tb_fifo_gain/i_gain2correction/U0/S_AXIS_TREADY \
+sim:/tb_fifo_gain/i_gain2correction/U0/S_AXIS_TSTRB \
+sim:/tb_fifo_gain/i_gain2correction/U0/S_AXIS_TUSER \
+sim:/tb_fifo_gain/i_gain2correction/U0/S_AXIS_TVALID \
+sim:/tb_fifo_gain/i_gain2correction/U0/S_AXI_ARADDR \
+sim:/tb_fifo_gain/i_gain2correction/U0/S_AXI_ARBURST \
+sim:/tb_fifo_gain/i_gain2correction/U0/S_AXI_ARCACHE \
+sim:/tb_fifo_gain/i_gain2correction/U0/S_AXI_ARID \
+sim:/tb_fifo_gain/i_gain2correction/U0/S_AXI_ARLEN \
+sim:/tb_fifo_gain/i_gain2correction/U0/S_AXI_ARLOCK \
+sim:/tb_fifo_gain/i_gain2correction/U0/S_AXI_ARPROT \
+sim:/tb_fifo_gain/i_gain2correction/U0/S_AXI_ARQOS \
+sim:/tb_fifo_gain/i_gain2correction/U0/S_AXI_ARREADY \
+sim:/tb_fifo_gain/i_gain2correction/U0/S_AXI_ARREGION \
+sim:/tb_fifo_gain/i_gain2correction/U0/S_AXI_ARSIZE \
+sim:/tb_fifo_gain/i_gain2correction/U0/S_AXI_ARUSER \
+sim:/tb_fifo_gain/i_gain2correction/U0/S_AXI_ARVALID \
+sim:/tb_fifo_gain/i_gain2correction/U0/S_AXI_AWADDR \
+sim:/tb_fifo_gain/i_gain2correction/U0/S_AXI_AWBURST \
+sim:/tb_fifo_gain/i_gain2correction/U0/S_AXI_AWCACHE \
+sim:/tb_fifo_gain/i_gain2correction/U0/S_AXI_AWID \
+sim:/tb_fifo_gain/i_gain2correction/U0/S_AXI_AWLEN \
+sim:/tb_fifo_gain/i_gain2correction/U0/S_AXI_AWLOCK \
+sim:/tb_fifo_gain/i_gain2correction/U0/S_AXI_AWPROT \
+sim:/tb_fifo_gain/i_gain2correction/U0/S_AXI_AWQOS \
+sim:/tb_fifo_gain/i_gain2correction/U0/S_AXI_AWREADY \
+sim:/tb_fifo_gain/i_gain2correction/U0/S_AXI_AWREGION \
+sim:/tb_fifo_gain/i_gain2correction/U0/S_AXI_AWSIZE \
+sim:/tb_fifo_gain/i_gain2correction/U0/S_AXI_AWUSER \
+sim:/tb_fifo_gain/i_gain2correction/U0/S_AXI_AWVALID \
+sim:/tb_fifo_gain/i_gain2correction/U0/S_AXI_BID \
+sim:/tb_fifo_gain/i_gain2correction/U0/S_AXI_BREADY \
+sim:/tb_fifo_gain/i_gain2correction/U0/S_AXI_BRESP \
+sim:/tb_fifo_gain/i_gain2correction/U0/S_AXI_BUSER \
+sim:/tb_fifo_gain/i_gain2correction/U0/S_AXI_BVALID \
+sim:/tb_fifo_gain/i_gain2correction/U0/S_AXI_RDATA \
+sim:/tb_fifo_gain/i_gain2correction/U0/S_AXI_RID \
+sim:/tb_fifo_gain/i_gain2correction/U0/S_AXI_RLAST \
+sim:/tb_fifo_gain/i_gain2correction/U0/S_AXI_RREADY \
+sim:/tb_fifo_gain/i_gain2correction/U0/S_AXI_RRESP \
+sim:/tb_fifo_gain/i_gain2correction/U0/S_AXI_RUSER \
+sim:/tb_fifo_gain/i_gain2correction/U0/S_AXI_RVALID \
+sim:/tb_fifo_gain/i_gain2correction/U0/S_AXI_WDATA \
+sim:/tb_fifo_gain/i_gain2correction/U0/S_AXI_WID \
+sim:/tb_fifo_gain/i_gain2correction/U0/S_AXI_WLAST \
+sim:/tb_fifo_gain/i_gain2correction/U0/S_AXI_WREADY \
+sim:/tb_fifo_gain/i_gain2correction/U0/S_AXI_WSTRB \
+sim:/tb_fifo_gain/i_gain2correction/U0/S_AXI_WUSER \
+sim:/tb_fifo_gain/i_gain2correction/U0/S_AXI_WVALID \
+sim:/tb_fifo_gain/i_gain2correction/U0/UNDERFLOW \
+sim:/tb_fifo_gain/i_gain2correction/U0/VALID \
+sim:/tb_fifo_gain/i_gain2correction/U0/WR_ACK \
+sim:/tb_fifo_gain/i_gain2correction/U0/WR_CLK \
+sim:/tb_fifo_gain/i_gain2correction/U0/WR_DATA_COUNT \
+sim:/tb_fifo_gain/i_gain2correction/U0/WR_EN \
+sim:/tb_fifo_gain/i_gain2correction/U0/WR_RST \
+sim:/tb_fifo_gain/i_gain2correction/U0/inverted_reset
+add wave -position insertpoint  \
+sim:/tb_fifo_gain/U_0/addr \
+sim:/tb_fifo_gain/U_0/addr_d \
+sim:/tb_fifo_gain/U_0/addr_gain \
+sim:/tb_fifo_gain/U_0/addr_h_mult1 \
+sim:/tb_fifo_gain/U_0/addr_h_mult2 \
+sim:/tb_fifo_gain/U_0/addr_h_out \
+sim:/tb_fifo_gain/U_0/addr_mult \
+sim:/tb_fifo_gain/U_0/addr_mult_in \
+sim:/tb_fifo_gain/U_0/addr_mult_out \
+sim:/tb_fifo_gain/U_0/addr_ppr \
+sim:/tb_fifo_gain/U_0/addr_ppr_d \
+sim:/tb_fifo_gain/U_0/addr_ppr_in \
+sim:/tb_fifo_gain/U_0/clk \
+sim:/tb_fifo_gain/U_0/data_mult \
+sim:/tb_fifo_gain/U_0/div_final \
+sim:/tb_fifo_gain/U_0/done_read_fifo \
+sim:/tb_fifo_gain/U_0/gain_data \
+sim:/tb_fifo_gain/U_0/gain_ready \
+sim:/tb_fifo_gain/U_0/gain_write_fifo \
+sim:/tb_fifo_gain/U_0/h_data \
+sim:/tb_fifo_gain/U_0/mult_p_ht_data \
+sim:/tb_fifo_gain/U_0/p_pirori_d \
+sim:/tb_fifo_gain/U_0/ppr \
+sim:/tb_fifo_gain/U_0/ppr_data \
+sim:/tb_fifo_gain/U_0/ppr_read_fifo \
+sim:/tb_fifo_gain/U_0/ppr_ready \
+sim:/tb_fifo_gain/U_0/r \
+sim:/tb_fifo_gain/U_0/ready_mult_hpht_r \
+sim:/tb_fifo_gain/U_0/ready_mult_p_ht \
+sim:/tb_fifo_gain/U_0/res_hpht_r \
+sim:/tb_fifo_gain/U_0/rst \
+sim:/tb_fifo_gain/U_0/sel_mux_h \
+sim:/tb_fifo_gain/U_0/sel_mux_mult \
+sim:/tb_fifo_gain/U_0/start_div \
+sim:/tb_fifo_gain/U_0/start_fifo_write \
+sim:/tb_fifo_gain/U_0/start_mult_hpht_r \
+sim:/tb_fifo_gain/U_0/start_mult_p_ht \
+sim:/tb_fifo_gain/U_0/start_read_fifo \
+sim:/tb_fifo_gain/U_0/wea_mult \
+sim:/tb_fifo_gain/U_0/wr_en \
+sim:/tb_fifo_gain/U_0/wr_en_d \
+sim:/tb_fifo_gain/U_0/wr_en_ff \
+sim:/tb_fifo_gain/U_0/wr_en_ff_d
+add wave -position insertpoint  \
+sim:/tb_fifo_gain/U_0/i_mult_hpht_r/addr_h \
+sim:/tb_fifo_gain/U_0/i_mult_hpht_r/addr_mult \
+sim:/tb_fifo_gain/U_0/i_mult_hpht_r/clk \
+sim:/tb_fifo_gain/U_0/i_mult_hpht_r/data_h \
+sim:/tb_fifo_gain/U_0/i_mult_hpht_r/data_mult \
+sim:/tb_fifo_gain/U_0/i_mult_hpht_r/r \
+sim:/tb_fifo_gain/U_0/i_mult_hpht_r/r_out \
+sim:/tb_fifo_gain/U_0/i_mult_hpht_r/rd_en \
+sim:/tb_fifo_gain/U_0/i_mult_hpht_r/ready \
+sim:/tb_fifo_gain/U_0/i_mult_hpht_r/res_hpht_r \
+sim:/tb_fifo_gain/U_0/i_mult_hpht_r/res_mult \
+sim:/tb_fifo_gain/U_0/i_mult_hpht_r/res_mult_out \
+sim:/tb_fifo_gain/U_0/i_mult_hpht_r/rst \
+sim:/tb_fifo_gain/U_0/i_mult_hpht_r/start \
+sim:/tb_fifo_gain/U_0/i_mult_hpht_r/start_mult \
+sim:/tb_fifo_gain/U_0/i_mult_hpht_r/valid_data
+add wave -position insertpoint  \
+sim:/tb_fifo_gain/U_0/i_mult_p_ht/addr_h \
+sim:/tb_fifo_gain/U_0/i_mult_p_ht/addr_mult \
+sim:/tb_fifo_gain/U_0/i_mult_p_ht/addr_ppr \
+sim:/tb_fifo_gain/U_0/i_mult_p_ht/clk \
+sim:/tb_fifo_gain/U_0/i_mult_p_ht/data_generate \
+sim:/tb_fifo_gain/U_0/i_mult_p_ht/data_in \
+sim:/tb_fifo_gain/U_0/i_mult_p_ht/data_mult \
+sim:/tb_fifo_gain/U_0/i_mult_p_ht/done \
+sim:/tb_fifo_gain/U_0/i_mult_p_ht/h_data \
+sim:/tb_fifo_gain/U_0/i_mult_p_ht/ppr_data \
+sim:/tb_fifo_gain/U_0/i_mult_p_ht/ready_mult \
+sim:/tb_fifo_gain/U_0/i_mult_p_ht/rst \
+sim:/tb_fifo_gain/U_0/i_mult_p_ht/start \
+sim:/tb_fifo_gain/U_0/i_mult_p_ht/start_mult \
+sim:/tb_fifo_gain/U_0/i_mult_p_ht/start_mult_d \
+sim:/tb_fifo_gain/U_0/i_mult_p_ht/wea_mult
+add wave -position insertpoint  \
+sim:/tb_fifo_gain/U_0/U_1/clk \
+sim:/tb_fifo_gain/U_0/U_1/csm2_current_state \
+sim:/tb_fifo_gain/U_0/U_1/csm2_next_state \
+sim:/tb_fifo_gain/U_0/U_1/csm2_next_timer \
+sim:/tb_fifo_gain/U_0/U_1/csm2_timeout \
+sim:/tb_fifo_gain/U_0/U_1/csm2_timer \
+sim:/tb_fifo_gain/U_0/U_1/csm2_to_div_st1 \
+sim:/tb_fifo_gain/U_0/U_1/done_mult_hpht_r \
+sim:/tb_fifo_gain/U_0/U_1/done_mult_p_ht \
+sim:/tb_fifo_gain/U_0/U_1/done_read_fifo \
+sim:/tb_fifo_gain/U_0/U_1/ppr_ready \
+sim:/tb_fifo_gain/U_0/U_1/rst \
+sim:/tb_fifo_gain/U_0/U_1/sel_mux_h \
+sim:/tb_fifo_gain/U_0/U_1/sel_mux_mult \
+sim:/tb_fifo_gain/U_0/U_1/start_div \
+sim:/tb_fifo_gain/U_0/U_1/start_mult_hpht \
+sim:/tb_fifo_gain/U_0/U_1/start_mult_p_ht \
+sim:/tb_fifo_gain/U_0/U_1/start_read_fifo \
+sim:/tb_fifo_gain/U_0/U_1/start_write_fifo
+# The connection to HDS has been closed 

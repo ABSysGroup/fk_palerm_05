@@ -1,0 +1,36 @@
+# //  Questa Sim-64
+# //  Version 10.1d win64 Nov  1 2012
+# //
+# //  Copyright 1991-2012 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //
+# vsim -L search -L common -do {add log -r *} -l transcript.txt -i -multisource_delay latest -t ns +typdelays -foreign {hdsInit C:/MentorGraphics/HDS_2012.1/resources/downstream/modelsim/ModelSim_64Bit.dll} -pli {"C:/MentorGraphics/HDS_2012.1/resources/downstream/modelsim/ModelSim_64Bit.dll"} search.r_search(struct) 
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# 
+# ** Note: (vsim-3865) Due to PLI being present, full design access is being specified.
+# 
+# ** Warning: (vopt-3) System call GetVolumeInformation failed.
+# 
+# No such file or directory. (errno = ENOENT)
+# Loading C:/MentorGraphics/HDS_2012.1/resources/downstream/modelsim/ModelSim_64Bit.dll
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.numeric_std(body)
+# Loading common.constants(body)
+# Loading work.r_search(struct)#1
+# Loading common.mux4a1(rtl)#1
+# Loading common.ram3x3(rtl)#1
+# Loading common.ram_reg(rtl)#1
+# Loading work.genera_cromosoma(impl_genera_cromosoma)#1
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.lfsr_galois_single45(impl_lfsr_galois_single45)#1
+# Loading work.main_uc(rtl)#1
+# add log -r * 
+run
+run

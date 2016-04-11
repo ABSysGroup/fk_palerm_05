@@ -1,0 +1,1 @@
+ -do "add log -r *" -L tb_search -L search -L common -l transcript.txt -i -t ns -multisource_delay latest +typdelays tb_search.tb_r_search(struct)

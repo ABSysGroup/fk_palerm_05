@@ -1,0 +1,40 @@
+set -xsthdpdir ./xst
+
+run
+-ifn k_mult_h.prj
+-ifmt mixed
+-ofn k_mult_h
+-ofmt NGC
+-top k_mult_h
+-p xc6vcx75t-ff484-1
+-opt_mode Area
+-opt_level 1
+-fsm_encoding Auto
+-rtlview NO
+-iuc NO
+-resource_sharing YES
+-safe_implementation NO
+-bus_delimiter <>
+-uc T:/TFG2015/src/design/correction/ise/k_mult_h_rtl/k_mult_h.xcf
+-write_timing_constraints YES
+-read_cores YES
+-sd ./cores
+-shreg_extract YES
+-fsm_extract YES
+-fsm_style lut
+-ram_extract YES
+-ram_style Auto
+-rom_extract YES
+-rom_style Auto
+-cross_clock_analysis NO
+-iob Auto
+-iobuf YES
+-keep_hierarchy YES
+-optimize_primitives NO
+-move_first_stage YES
+-move_last_stage YES
+-register_duplication YES
+-slice_utilization_ratio 100
+-slice_utilization_ratio_maxmargin 5
+-glob_opt allclocknets
+-register_balancing No

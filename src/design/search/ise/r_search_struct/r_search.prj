@@ -1,0 +1,8 @@
+vhdl  search  T:/fk_palerm_2005/src/design/search/hdl/LFSR_Galois_single45.vhd
+vhdl  search  T:/fk_palerm_2005/src/design/search/hdl/genera_cromosoma.vhd
+vhdl  search  T:/fk_palerm_2005/src/design/search/hdl/main_uc.vhd
+vhdl  common  T:/fk_palerm_2005/src/design/common/hdl/mux4a1.vhd
+vhdl  common  T:/fk_palerm_2005/src/design/common/hdl/constants.vhd
+vhdl  common  T:/fk_palerm_2005/src/design/common/hdl/ram3x3.vhd
+vhdl  common  T:/fk_palerm_2005/src/design/common/hdl/ram_reg.vhd
+vhdl  search  T:/fk_palerm_2005/src/design/search/hdl/r_search.vhd

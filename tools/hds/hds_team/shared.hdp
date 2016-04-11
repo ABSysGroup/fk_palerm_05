@@ -1,0 +1,30 @@
+[ModelSim]
+modelsim_lib = $HDS_HOME/../Modeltech/modelsim_lib
+unisim = $HOME_PROJECTS/$NAME_PROJECT/work/compilation/unisim
+[hdl]
+ieee = $HDS_HOME/hdl_libs/ieee/hdl
+modelsim_lib = $HDS_HOME/../Modeltech/vhdl_src/modelsim_lib
+std = $HDS_HOME/hdl_libs/std/hdl
+std_developerskit = $HDS_HOME/hdl_libs/std_developerskit/hdl
+synopsys = $HDS_HOME/hdl_libs/synopsys/hdl
+verilog = $HDS_HOME/hdl_libs/verilog/hdl
+[hds]
+ieee = $HDS_HOME/hdl_libs/ieee/hds
+moduleware = $HDS_HOME/hdl_libs/moduleware
+std = $HDS_HOME/hdl_libs/std/hds
+std_developerskit = $HDS_HOME/hdl_libs/std_developerskit/hds
+synopsys = $HDS_HOME/hdl_libs/synopsys/hds
+unisim = $HOME_PROJECTS/$NAME_PROJECT/source/standard/unisim/hds
+verilog = $HDS_HOME/hdl_libs/verilog/hds
+[hds_settings]
+project_description = The standard HDS shared project
+version = 2
+[library_type]
+ieee = standard
+modelsim_lib = standard
+moduleware = standard
+std = standard
+std_developerskit = standard
+synopsys = standard
+unisim = standard
+verilog = standard

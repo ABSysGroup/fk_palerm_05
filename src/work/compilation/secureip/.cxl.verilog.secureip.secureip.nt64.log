@@ -1,0 +1,69 @@
+Modifying modelsim.ini
+
+QuestaSim-64 vlog 10.1d Compiler 2012.11 Nov  1 2012
+-- Compiling module GTX_DUAL_FAST
+-- Compiling module GTP_DUAL_FAST
+-- Compiling module B_GTPA1_DUAL
+-- Compiling module GTPA1_DUAL_WRAP
+-- Compiling module TEMAC_SWIFT
+-- Compiling module PCIE_INTERNAL_1_1_SWIFT
+-- Compiling module PPC440_SWIFT
+-- Compiling module GT11_SWIFT
+-- Compiling module PPC405_ADV_SWIFT
+-- Compiling module EMAC_SWIFT
+-- Compiling module TEMAC_SINGLE_WRAP
+-- Compiling module GTXE1_WRAP
+-- Compiling module PCIE_2_0_WRAP
+-- Compiling module GTHE1_QUAD_WRAP
+-- Compiling module B_PCIE_A1
+-- Compiling module PCIE_A1_WRAP
+-- Compiling module B_MCB
+-- Compiling module MCB_WRAP
+-- Compiling module GTXE2_CHANNEL_WRAP
+-- Compiling module GTXE2_COMMON_WRAP
+-- Compiling module PCIE_2_1_WRAP
+-- Compiling module ISERDESE2_WRAP
+-- Compiling module OSERDESE2_WRAP
+-- Compiling module SIP_IN_FIFO
+-- Compiling module SIP_OUT_FIFO
+-- Compiling module SIP_PHY_CONTROL
+-- Compiling module SIP_PHASER_IN
+-- Compiling module SIP_PHASER_OUT
+-- Compiling module PCIE_3_0_WRAP
+-- Compiling module GTHE2_CHANNEL_WRAP
+-- Compiling module GTHE2_COMMON_WRAP
+-- Compiling module GTPE2_CHANNEL_WRAP
+-- Compiling module GTPE2_COMMON_WRAP
+
+Top level modules:
+	GTX_DUAL_FAST
+	GTP_DUAL_FAST
+	GTPA1_DUAL_WRAP
+	TEMAC_SWIFT
+	PCIE_INTERNAL_1_1_SWIFT
+	PPC440_SWIFT
+	GT11_SWIFT
+	PPC405_ADV_SWIFT
+	EMAC_SWIFT
+	TEMAC_SINGLE_WRAP
+	GTXE1_WRAP
+	PCIE_2_0_WRAP
+	GTHE1_QUAD_WRAP
+	PCIE_A1_WRAP
+	MCB_WRAP
+	GTXE2_CHANNEL_WRAP
+	GTXE2_COMMON_WRAP
+	PCIE_2_1_WRAP
+	ISERDESE2_WRAP
+	OSERDESE2_WRAP
+	SIP_IN_FIFO
+	SIP_OUT_FIFO
+	SIP_PHY_CONTROL
+	SIP_PHASER_IN
+	SIP_PHASER_OUT
+	PCIE_3_0_WRAP
+	GTHE2_CHANNEL_WRAP
+	GTHE2_COMMON_WRAP
+	GTPE2_CHANNEL_WRAP
+	GTPE2_COMMON_WRAP
+

@@ -1,0 +1,678 @@
+DocumentHdrVersion "1.1"
+Header (DocumentHdr
+version 2
+dmPackageRefs [
+]
+embeddedInstances [
+(EmbeddedInstance
+name "p_mux4a1"
+number "7"
+)
+]
+)
+version "30.1"
+newIbd 1
+appVersion "2012.1 (Build 6)"
+noEmbeddedEditors 1
+model (IbdDiag
+LanguageMgr "VhdlLangMgr"
+uid 1,0
+bg "65535,65535,65535"
+grid (Grid
+origin "0,0"
+isVisible 1
+isActive 1
+xSpacing 1000
+xySpacing 1000
+xShown 1
+yShown 1
+color "65535,0,0"
+)
+packageList *1 (PackageList
+uid 2,0
+stg "VerticalLayoutStrategy"
+textVec [
+*2 (Text
+uid 3,0
+va (VaSet
+font "arial,8,1"
+)
+xt "0,0,5400,1000"
+st "Package List"
+blo "0,800"
+)
+*3 (MLText
+uid 4,0
+va (VaSet
+font "arial,8,0"
+)
+xt "0,1000,10900,4000"
+tm "PackageList"
+)
+]
+)
+compDirBlock (MlTextGroup
+uid 5,0
+stg "VerticalLayoutStrategy"
+textVec [
+*4 (Text
+uid 6,0
+va (VaSet
+font "arial,8,1"
+)
+xt "20000,0,28100,1000"
+st "Compiler Directives"
+blo "20000,800"
+)
+*5 (Text
+uid 7,0
+va (VaSet
+font "arial,8,1"
+)
+xt "20000,1000,29600,2000"
+st "Pre-module directives:"
+blo "20000,1800"
+)
+*6 (MLText
+uid 8,0
+va (VaSet
+font "arial,8,0"
+)
+xt "20000,2000,27500,4000"
+st "`resetall
+`timescale 1ns/10ps"
+tm "BdCompilerDirectivesTextMgr"
+)
+*7 (Text
+uid 9,0
+va (VaSet
+font "arial,8,1"
+)
+xt "20000,4000,30100,5000"
+st "Post-module directives:"
+blo "20000,4800"
+)
+*8 (MLText
+uid 10,0
+va (VaSet
+font "arial,8,0"
+)
+xt "20000,0,20000,0"
+tm "BdCompilerDirectivesTextMgr"
+)
+*9 (Text
+uid 11,0
+va (VaSet
+font "arial,8,1"
+)
+xt "20000,5000,29900,6000"
+st "End-module directives:"
+blo "20000,5800"
+)
+*10 (MLText
+uid 12,0
+va (VaSet
+font "arial,8,0"
+)
+xt "20000,6000,20000,6000"
+tm "BdCompilerDirectivesTextMgr"
+)
+]
+associable 1
+)
+windowSize "0,0,1015,690"
+viewArea "0,0,0,0"
+cachedDiagramExtent "0,0,0,0"
+pageBreakOrigin "0,0"
+logical (IbdLogical
+uid 13,0
+fhc "
+"
+colContainer (IbdColContainer
+uid 14,0
+optionalChildren [
+*11 (IbdInterface
+ordering 1
+uid 15,0
+name "mux4a1"
+on 6
+fa [
+(IbdNFA
+io "I"
+c *12 (IbdNet
+d (Decl
+n "in_2"
+t "std_logic_vector"
+b "(15 downto 0)"
+o 3
+)
+uid 44,0
+on 11
+nodes [
+&11
+*13 (IbdEB
+uid 52,0
+optionalChildren [
+*14 (IbdEmbeddedText
+theText "p_mux4a1:process(in_1,in_2,in_3,in_4,seleccion)
+   begin
+       
+    case seleccion is
+        when \"00\" =>
+            salida<=in_0;
+        when \"01\" =>
+            salida<=in_1;
+        when \"10\" =>
+            salida<=in_2;
+        when \"11\" =>
+            salida<=in_3;
+    end case;
+end process;
+"
+uid 53,0
+)
+]
+name "p_mux4a1"
+on 7
+fa [
+(IbdNFA
+io "I"
+c &12
+)
+(IbdNFA
+io "I"
+c *15 (IbdNet
+d (Decl
+n "in_1"
+t "std_logic_vector"
+b "(15 downto 0)"
+o 2
+)
+uid 42,0
+on 10
+nodes [
+&11
+&13
+]
+)
+)
+(IbdNFA
+io "O"
+c *16 (IbdNet
+d (Decl
+n "salida"
+t "std_logic_vector"
+b "(15 downto 0)"
+o 6
+)
+uid 50,0
+on 14
+nodes [
+&11
+&13
+]
+)
+)
+(IbdNFA
+io "I"
+c *17 (IbdNet
+d (Decl
+n "in_3"
+t "std_logic_vector"
+b "(15 downto 0)"
+o 4
+)
+uid 46,0
+on 12
+nodes [
+&11
+&13
+]
+)
+)
+(IbdNFA
+io "I"
+c *18 (IbdNet
+d (Decl
+n "in_0"
+t "std_logic_vector"
+b "(15 downto 0)"
+o 1
+)
+uid 40,0
+on 9
+nodes [
+&11
+&13
+]
+)
+)
+(IbdNFA
+io "I"
+c *19 (IbdNet
+d (Decl
+n "seleccion"
+t "std_logic_vector"
+b "(1 downto 0)"
+o 5
+)
+uid 48,0
+on 13
+nodes [
+&11
+&13
+]
+)
+)
+]
+dec [
+]
+)
+]
+)
+)
+(IbdNFA
+io "I"
+c &15
+)
+(IbdNFA
+io "O"
+c &16
+)
+(IbdNFA
+io "I"
+c &17
+)
+(IbdNFA
+io "I"
+c &18
+)
+(IbdNFA
+io "I"
+c &19
+)
+]
+dec [
+]
+)
+&13
+]
+)
+rowContainer (IbdRowContainer
+uid 16,0
+optionalChildren [
+&18
+&15
+&12
+&17
+&19
+&16
+]
+)
+)
+physical (MPhysicalIbd
+activeIct &0
+mainIct (MIct
+name "All"
+mcolContainer (MIctColContainer
+optionalChildren [
+*20 (MRefCol
+p 0
+uid 20,0
+d 20
+)
+*21 (MNameCol
+p 1
+uid 21,0
+d 114
+)
+*22 (MTypeCol
+p 2
+uid 22,0
+d 79
+)
+*23 (MBoundsCol
+p 3
+uid 23,0
+d 70
+)
+*24 (MFilterCol
+p 4
+hidden 1
+uid 24,0
+d 120
+)
+*25 (MFixedCol
+p 5
+hidden 1
+uid 25,0
+d 20
+)
+*26 (MInterfaceCol
+p 6
+uid 26,0
+d 35
+ibdInterface &11
+)
+*27 (MValueCol
+p 8
+uid 27,0
+)
+*28 (MEolCol
+p 9
+uid 28,0
+)
+*29 (MEBCol
+p 7
+uid 54,0
+d 35
+eb &13
+)
+]
+)
+mrowContainer (MIctRowContainer
+optionalChildren [
+*30 (MRefRow
+p 0
+uid 30,0
+)
+*31 (MNameRow
+p 1
+uid 31,0
+d 51
+)
+*32 (MLibRow
+p 2
+uid 32,0
+)
+*33 (MInstanceRefRow
+p 3
+uid 33,0
+)
+*34 (MPortMapLabelRow
+p 4
+uid 34,0
+)
+*35 (MFilterRow
+p 5
+hidden 1
+uid 35,0
+d 20
+)
+*36 (MFixedRow
+p 6
+hidden 1
+uid 36,0
+)
+*37 (MReqRow
+p 7
+hidden 1
+uid 37,0
+)
+*38 (MUcPortGroupRow
+p 8
+hidden 1
+uid 38,0
+)
+*39 (MEmptyRow
+p 15
+uid 39,0
+)
+*40 (MNetRow
+p 9
+uid 41,0
+net &18
+)
+*41 (MNetRow
+p 10
+uid 43,0
+net &15
+)
+*42 (MNetRow
+p 11
+uid 45,0
+net &12
+)
+*43 (MNetRow
+p 12
+uid 47,0
+net &17
+)
+*44 (MNetRow
+p 13
+uid 49,0
+net &19
+)
+*45 (MNetRow
+p 14
+uid 51,0
+net &16
+)
+]
+)
+vaOverrides [
+]
+)
+blkMVa (MVa
+cellColor "39936,56832,65280"
+fontColor "0,0,0"
+font "Tahoma,10,1"
+)
+hdsCompMva (MVa
+cellColor "45055,65535,30000"
+fontColor "0,0,0"
+font "Tahoma,10,1"
+)
+mwCompMva (MVa
+cellColor "0,65535,65535"
+fontColor "0,0,0"
+font "Tahoma,10,1"
+)
+ipCompMva (MVa
+cellColor "45055,65535,30000"
+fontColor "0,0,0"
+font "Tahoma,10,1"
+)
+embeddedBlkMva (MVa
+cellColor "65535,65535,37120"
+fontColor "0,0,0"
+font "Tahoma,10,1"
+)
+expressionRowMva (MVa
+alignment 0
+cellColor "65280,65280,46080"
+fontColor "0,0,0"
+font "Tahoma,10,1"
+)
+netSliceMva (MVa
+alignment 0
+cellColor "39936,56832,65280"
+fontColor "0,0,0"
+font "Tahoma,10,1"
+)
+bundleMva (MVa
+alignment 0
+cellColor "65280,65280,46080"
+fontColor "0,0,0"
+font "Tahoma,10,1"
+)
+propColMva (MVa
+cellColor "0,49152,49152"
+fontColor "0,0,0"
+font "Tahoma,10,1"
+)
+groupColMva (MVa
+alignment 0
+cellColor "62965,57054,46003"
+fontColor "0,0,0"
+font "Tahoma,10,1"
+)
+interfaceColMva (MVa
+cellColor "59904,39936,65280"
+fontColor "0,0,0"
+font "Tahoma,10,1"
+)
+frameColMva (MVa
+alignment 0
+cellColor "0,0,65535"
+fontColor "65535,65535,65535"
+font "Tahoma,10,1"
+)
+propRowMva (MVa
+alignment 0
+cellColor "0,49152,49152"
+fontColor "0,0,0"
+font "Tahoma,10,1"
+)
+groupRowMva (MVa
+alignment 0
+cellColor "62965,57054,46003"
+fontColor "0,0,0"
+font "Tahoma,10,1"
+)
+netRowMva (MVa
+cellColor "65535,65535,65535"
+fontColor "0,0,0"
+font "Tahoma,10,0"
+)
+uid 17,0
+)
+lastUid 54,0
+genericsCommonDM (CommonDM
+ldm (LogicalDM
+emptyRow *46 (LEmptyRow
+)
+optionalChildren [
+*47 (RefLabelRowHdr
+)
+*48 (TitleRowHdr
+)
+*49 (FilterRowHdr
+)
+*50 (RefLabelColHdr
+tm "RefLabelColHdrMgr"
+)
+*51 (RowExpandColHdr
+tm "RowExpandColHdrMgr"
+)
+*52 (GroupColHdr
+tm "GroupColHdrMgr"
+)
+*53 (NameColHdr
+tm "GenericNameColHdrMgr"
+)
+*54 (TypeColHdr
+tm "GenericTypeColHdrMgr"
+)
+*55 (InitColHdr
+tm "GenericValueColHdrMgr"
+)
+*56 (PragmaColHdr
+tm "GenericPragmaColHdrMgr"
+)
+*57 (EolColHdr
+tm "GenericEolColHdrMgr"
+)
+]
+)
+pdm (PhysicalDM
+displayShortBounds 1
+editShortBounds 1
+optionalChildren [
+*58 (Sheet
+sheetRow (SheetRow
+headerVa (MVa
+cellColor "49152,49152,49152"
+fontColor "0,0,0"
+font "Tahoma,10,0"
+)
+cellVa (MVa
+cellColor "65535,65535,65535"
+fontColor "0,0,0"
+font "Tahoma,10,0"
+)
+groupVa (MVa
+cellColor "39936,56832,65280"
+fontColor "0,0,0"
+font "Tahoma,10,0"
+)
+emptyMRCItem *59 (MRCItem
+litem &46
+pos 3
+dimension 20
+)
+optionalChildren [
+*60 (MRCItem
+litem &47
+pos 0
+dimension 20
+)
+*61 (MRCItem
+litem &48
+pos 1
+dimension 23
+)
+*62 (MRCItem
+litem &49
+pos 2
+hidden 1
+dimension 20
+)
+]
+)
+sheetCol (SheetCol
+propVa (MVa
+cellColor "0,49152,49152"
+fontColor "0,0,0"
+font "Tahoma,10,0"
+textAngle 90
+)
+optionalChildren [
+*63 (MRCItem
+litem &50
+pos 0
+dimension 20
+)
+*64 (MRCItem
+litem &52
+pos 1
+dimension 50
+)
+*65 (MRCItem
+litem &53
+pos 2
+dimension 100
+)
+*66 (MRCItem
+litem &54
+pos 3
+dimension 100
+)
+*67 (MRCItem
+litem &55
+pos 4
+dimension 50
+)
+*68 (MRCItem
+litem &56
+pos 5
+dimension 50
+)
+*69 (MRCItem
+litem &57
+pos 6
+dimension 80
+)
+]
+)
+fixedCol 3
+fixedRow 2
+name "Ports"
+vaOverrides [
+]
+)
+]
+)
+type 1
+)
+)

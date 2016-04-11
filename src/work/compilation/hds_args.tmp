@@ -1,0 +1,1 @@
+ -do "add log -r *" -L tb_gain -L ip -L common -L gain -L xilinxcorelib -l transcript.txt -i -t ns -multisource_delay latest +typdelays tb_gain.tb_fifo_gain(struct)

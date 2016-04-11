@@ -1,0 +1,8 @@
+1. Módulo: Estimation
+2. Ecuaciones:
+	* Xpriori = A*Xposteriori
+	* Ppriori = A * Pposteriori* Atraspuesta + Q
+3. El módulo principal es el que se llama 'estim'
+4. Ideas de implementación:
+	Como tengo dos submódulos independientes, he decidido utilizar el top level de mi proyecto
+	como wrapper, para luego implementar cada modulo por su lado. 

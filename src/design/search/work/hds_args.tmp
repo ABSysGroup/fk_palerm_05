@@ -1,0 +1,1 @@
+ -do "add log -r *" -L search -L common -l transcript.txt -i -t ns -multisource_delay latest +typdelays search.r_search(struct)

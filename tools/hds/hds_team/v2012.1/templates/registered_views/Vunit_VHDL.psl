@@ -1,0 +1,19 @@
+DESCRIPTION_START
+This is the default template used for the creation of PSL Vunit (VHDL) files.
+Template supplied by Mentor Graphics.
+DESCRIPTION_END
+--
+-- PSL Vunit(VHDL Syntax)
+--
+-- Created:
+--          by - %(user).%(group) (%(host))
+--          at - %(time) %(date)
+--
+-- using Mentor Graphics HDL Designer(TM) %(version)
+--
+
+vunit %(view) ([%(unit)])
+{
+    default clock IS ClockName;
+    
+}

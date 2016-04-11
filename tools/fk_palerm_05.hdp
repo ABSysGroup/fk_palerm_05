@@ -1,0 +1,6 @@
+[hds_settings]
+version = 2
+[hds]
+[hdl]
+[shared]
+others = $HDS_TEAM_HOME\shared.hdp

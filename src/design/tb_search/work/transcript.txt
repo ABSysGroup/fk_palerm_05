@@ -1,0 +1,65 @@
+# //  Questa Sim-64
+# //  Version 10.1d win64 Nov  1 2012
+# //
+# //  Copyright 1991-2012 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //
+# vsim -L tb_search -L search -L common -do {add log -r *} -l transcript.txt -i -multisource_delay latest -t ns +typdelays -foreign {hdsInit C:/MentorGraphics/HDS_2012.1/resources/downstream/modelsim/ModelSim_64Bit.dll} -pli {"C:/MentorGraphics/HDS_2012.1/resources/downstream/modelsim/ModelSim_64Bit.dll"} tb_search.tb_r_search(struct) 
+# Loading C:/MentorGraphics/HDS_2012.1/resources/downstream/modelsim/ModelSim_64Bit.dll
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading work.tb_r_search(struct)#1
+# Loading ieee.numeric_std(body)
+# Loading common.constants(body)
+# Loading search.r_search(struct)#1
+# Loading common.mux4a1(rtl)#1
+# Loading common.ram3x3(rtl)#1
+# Loading common.ram_reg(rtl)#1
+# Loading search.genera_cromosoma(impl_genera_cromosoma)#1
+# Loading ieee.std_logic_unsigned(body)
+# Loading search.lfsr_galois_single45(impl_lfsr_galois_single45)#1
+# Loading search.main_uc(rtl)#1
+# add log -r * 
+run
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 5 ns  Iteration: 1  Instance: /tb_r_search/i_r_search/i_q
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+do T:/fk_palerm_2005/src/design/tb_search/work/wave.do
+add wave -position insertpoint  \
+sim:/tb_r_search/i_r_search/i_main_uc/fitness_hijo_1 \
+sim:/tb_r_search/i_r_search/i_main_uc/fitness_hijo_2
+add wave -position insertpoint  \
+sim:/tb_r_search/i_r_search/i_main_uc/mejor_fitness_1
+add wave -position insertpoint  \
+sim:/tb_r_search/i_r_search/i_genera_cromosoma/cromosoma_hijo_1 \
+sim:/tb_r_search/i_r_search/i_genera_cromosoma/cromosoma_hijo_2 \
+sim:/tb_r_search/i_r_search/i_genera_cromosoma/cromosoma_mutado \
+sim:/tb_r_search/i_r_search/i_genera_cromosoma/cromosoma_padre
+add wave -position insertpoint  \
+sim:/tb_r_search/i_r_search/i_mux/in_0 \
+sim:/tb_r_search/i_r_search/i_mux/in_1 \
+sim:/tb_r_search/i_r_search/i_mux/in_2 \
+sim:/tb_r_search/i_r_search/i_mux/in_3
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf T:/fk_palerm_2005/src/design/tb_search/work/wave.do
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf T:/fk_palerm_2005/src/design/tb_search/work/wave.do
+add wave -position insertpoint  \
+sim:/tb_r_search/i_r_search/i_q/ram
+# The connection to HDS has been closed 

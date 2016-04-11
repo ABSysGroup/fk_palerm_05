@@ -1,0 +1,17 @@
+CxlResult:T:\TFG2015\work\compilation/secureip/.cxl.verilog.secureip.secureip.nt64.rpt =
+	ExecutionPlatform = nt64 ,
+	SourceLibrary = secureip ,
+	SourcePath = C:/Xilinx/14.1/ISE_DS/ISE/secureip/mti ,
+	Simulator = questasim ,
+	SimulatorVersion = 10.1d ,
+	CompiledLibrary = secureip ,
+	CompiledPath = T:\TFG2015\work\compilation/secureip ,
+	Timestamp = Fri Apr 17 06:38:32 2015 ,
+	Time = 1429249112 ,
+	Language = verilog ,
+	XilinxBuildNumber = P.15xf ,
+	XilinxVersion = 14.1 ,
+	LogFile = T:\TFG2015\work\compilation/secureip/.cxl.verilog.secureip.secureip.nt64.log ,
+	NumOfErrors = 0 ,
+	NumOfWarnings = 0 ,
+

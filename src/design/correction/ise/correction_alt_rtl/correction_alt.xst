@@ -1,0 +1,38 @@
+set -xsthdpdir ./xst
+
+run
+-ifn correction_alt.prj
+-ifmt mixed
+-ofn correction_alt
+-ofmt NGC
+-top correction_alt
+-p xc6vcx75t-ff484-1
+-opt_mode Area
+-opt_level 1
+-fsm_encoding Auto
+-rtlview NO
+-iuc NO
+-resource_sharing YES
+-safe_implementation NO
+-bus_delimiter <>
+-read_cores YES
+-sd ./cores
+-shreg_extract YES
+-fsm_extract YES
+-fsm_style lut
+-ram_extract YES
+-ram_style Auto
+-rom_extract YES
+-rom_style Auto
+-cross_clock_analysis NO
+-iob Auto
+-iobuf YES
+-keep_hierarchy YES
+-optimize_primitives NO
+-move_first_stage YES
+-move_last_stage YES
+-register_duplication YES
+-slice_utilization_ratio 100
+-slice_utilization_ratio_maxmargin 5
+-glob_opt allclocknets
+-register_balancing No

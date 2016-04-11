@@ -1,0 +1,109 @@
+[DesignChecker]
+common = $HOME_PROJECT/tools/designcheck/common
+correction = $HOME_PROJECT/tools/designcheck/correction
+gain = $HOME_PROJECT/tools/designcheck/gain
+kalman_filter = $HOME_PROJECT/tools/designcheck/kalman_filter
+prediction = $HOME_PROJECT/tools/designcheck/prediction
+search = $HOME_PROJECT/src/design/search/designcheck
+tb_common = $HOME_PROJECT/src/tb_design/tb_common/designcheck
+tb_correction = $HOME_PROJECT/src/tb_design/tb_correction/designcheck
+tb_gain = $HOME_PROJECT/src/tb_design/tb_gain/designcheck
+tb_kalman = $HOME_PROJECT/src/tb_design/tb_kalman/designcheck
+tb_prediction = $HOME_PROJECT/src/tb_design/tb_prediction/designcheck
+tb_search = $HOME_PROJECT\src\design\tb_search\designcheck
+[ModelSim]
+common = $HOME_PROJECT/src/design/common/work
+[QuestaSim]
+common = $HOME_PROJECT/work/compilation
+correction = $HOME_PROJECT/work/compilation
+gain = $HOME_PROJECT/work/compilation
+ip = $HOME_PROJECT/work/compilation
+kalman_filter = $HOME_PROJECT/work/compilation
+prediction = $HOME_PROJECT/work/compilation
+search = $HOME_PROJECT\src\design\search\work
+tb_common = $HOME_PROJECT/work/compilation
+tb_correction = $HOME_PROJECT/work/compilation
+tb_gain = $HOME_PROJECT/work/compilation
+tb_kalman = $HOME_PROJECT/work/compilation
+tb_prediction = $HOME_PROJECT/work/compilation
+tb_search = $HOME_PROJECT\src\design\tb_search\work
+unisim = $HOME_PROJECT/work/compilation/unisim
+xilinxcorelib = $HOME_PROJECT/work/compilation/xilinxcorelib
+[XilinxISE]
+common = $HOME_PROJECT/tools/ise/common
+correction = $HOME_PROJECT/src/design/correction/ise
+gain = $HOME_PROJECT/src/design/gain/ise
+kalman_filter = $HOME_PROJECT/tools/ise/kalman_filter
+prediction = $HOME_PROJECT/src/design/prediction/ise
+search = $HOME_PROJECT/src/design/search/ise
+tb_gain = $HOME_PROJECT/src/tb_design/tb_gain/ise
+tb_kalman = $HOME_PROJECT/src/tb_design/tb_kalman/ise
+tb_prediction = $HOME_PROJECT/src/tb_design/tb_prediction/ise
+[hdl]
+common = $HOME_PROJECT/src/design/common/hdl
+correction = $HOME_PROJECT/src/design/correction/hdl
+gain = $HOME_PROJECT/src/design/gain/hdl
+ip = $HOME_PROJECT/src/ip/hdl
+kalman_filter = $HOME_PROJECT/src/design/kalman_filter/hdl
+prediction = $HOME_PROJECT/src/design/prediction/hdl
+search = $HOME_PROJECT/src/design/search/hdl
+tb_common = $HOME_PROJECT/src/tb_design/tb_common/hdl
+tb_correction = $HOME_PROJECT/src/tb_design/tb_correction/hdl
+tb_gain = $HOME_PROJECT/src/tb_design/tb_gain/hdl
+tb_kalman = $HOME_PROJECT/src/tb_design/tb_kalman/hdl
+tb_prediction = $HOME_PROJECT/src/tb_design/tb_prediction/hdl
+tb_search = $HOME_PROJECT/src/design/tb_search/hdl
+[hds]
+common = $HOME_PROJECT/src/design/common/hds
+correction = $HOME_PROJECT/src/design/correction/hds
+gain = $HOME_PROJECT/src/design/gain/hds
+ip = $HOME_PROJECT/src/ip/hds
+kalman_filter = $HOME_PROJECT/src/design/kalman_filter/hds
+prediction = $HOME_PROJECT/src/design/prediction/hds
+search = $HOME_PROJECT/src/design/search/hds
+tb_common = $HOME_PROJECT/src/tb_design/tb_common/hds
+tb_correction = $HOME_PROJECT/src/tb_design/tb_correction/hds
+tb_gain = $HOME_PROJECT/src/tb_design/tb_gain/hds
+tb_kalman = $HOME_PROJECT/src/tb_design/tb_kalman/hds
+tb_prediction = $HOME_PROJECT/src/tb_design/tb_prediction/hds
+tb_search = $HOME_PROJECT/src/design/tb_search/hds
+unisim = $HOME_PROJECT/src/standard/unisim/hds
+xilinxcorelib = $HOME_PROJECT/src/standard/XilinxCoreLib/hds
+[hds_settings]
+default_library = kalman_filter
+design_root = kalman_filter.kalman_filter(struct)kalman_filter/struct.bd
+version = 2
+[library_files_inclusion]
+common = all
+correction = all
+gain = all
+ip = all
+kalman_filter = all
+prediction = all
+search = all
+tb_common = all
+tb_correction = all
+tb_gain = all
+tb_kalman = all
+tb_prediction = all
+tb_search = all
+[library_type]
+common = regular
+correction = regular
+gain = regular
+ip = regular
+kalman_filter = regular
+prediction = regular
+search = regular
+tb_common = regular
+tb_correction = regular
+tb_gain = regular
+tb_kalman = regular
+tb_prediction = regular
+tb_search = regular
+unisim = downstream_only
+xilinxcorelib = downstream_only
+[protected_library_traversal]
+xilinxcorelib = no
+[shared]
+others = $HDS_TEAM_HOME/shared.hdp
